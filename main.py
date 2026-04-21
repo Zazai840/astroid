@@ -7,6 +7,8 @@ from logger import log_state
 
 from player import Player
 
+from astroids import Astroid
+
 
 def main():
     pygame.init()
@@ -20,8 +22,15 @@ def main():
     
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
+    
     Player.containers = (updatable, drawable)
     player = Player(x, y)
+    
+    
+    astroids = pygame.sprite.Group()
+    Astroid.containers = (astroids, updatable, drawable)
+    
+
     while True:
         log_state()
         for event in pygame.event.get():

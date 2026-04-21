@@ -9,7 +9,9 @@ class Astroid(CircleShape):
     def draw(self, screen):
         pygame.draw.circle(screen, "white", (x, y), radius, LINE_WIDTH)
     
-    def
+    def update(self, dt):
+        self.position = self.position + self.velocity * dt
+        
     
 
 
