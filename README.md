@@ -1,4 +1,4 @@
-Astroid -- Asteroid shooting game made using pygame
+Asteroid -- Asteroid shooting game made using pygame
 
 Rules: 
 
